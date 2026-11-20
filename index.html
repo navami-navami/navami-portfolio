@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NAVAMI S | Portfolio</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Doto:wght@400;500;600;700&family=IBM+Plex+Mono&family=Anta&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <div class="logo">NAVAMI S</div>
+
+        <ul>
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About</a></li>
+   <li><a href="#projects">Projects</a></li>
+<li><a href="#courses">Courses & Certifications</a></li>
+<li><a href="#achievements">Achievements</a></li>
+    <li><a href="#contact">Contact</a></li>
+</ul>
+        </nav>
+    </header>
+
+
+    <main>
+
+<section id="home" class="hero">
+
+    <div class="hero-text">
+
+        <p class="small-text">HELLO, I'M</p>
+
+        <h1>NAVAMI S</h1>
+
+        <h2>ELECTRICAL & ELECTRONICS ENGINEERING STUDENT</h2>
+
+        <p>
+            Curious to learn, open to explore, and always discovering
+            new possibilities. I enjoy gaining knowledge, building
+            new skills, and discovering what I can create along the way.
+        </p>
+
+        <p class="identity">
+            EEE • RSET • NCC • Technology • Leadership
+        </p>
+
+        <div class="buttons">
+            <a href="#projects" class="button">View My Work</a>
+            <a href="#contact" class="button outline">Contact Me</a>
+        </div>
+
+    </div>
+
+      <div class="photo-placeholder">
+        <img src="AMMU.jpg" alt="Ammu">
+    </div>
+
+</section>
+
+
+  <section id="about">
+
+    <p class="small-text">GET TO KNOW ME</p>
+
+    <h2>About Me</h2>
+
+    <div class="about-content">
+
+        <div class="about-text">
+
+            <p>
+                I’m an Electrical & Electronics Engineering student who enjoys
+                learning through practical experiences and exploring things
+                beyond what I already know.
+            </p>
+
+            <p>
+                I’m naturally curious about electronics, technology, and the
+                interesting facts and ideas I come across. I enjoy trying new
+                things, especially when they challenge me to learn a skill
+                from scratch.
+            </p>
+
+            <p>
+                I also have a basic understanding of using AutoCAD for
+                3D-printing applications, which has introduced me
+                to the connection between digital design and practical making.
+            </p>
+
+            <p>
+                Alongside engineering, I enjoy drawing and dance, and I’m
+                working on developing my communication and public speaking
+                skills.
+            </p>
+
+            <p>
+                I’m still discovering my interests and strengths, and I see
+                that as an exciting part of my journey.
+            </p>
+
+        </div>
+
+
+        <div class="interests">
+
+            <h3>WHAT I'M CURIOUS ABOUT</h3>
+
+            <div class="interest-list">
+
+                <span>⚡ Electronics</span>
+                <span>💻 Technology</span>
+                <span>🔧 Practical Projects</span>
+                <span>📐 CAD & 3D Printing</span>
+                <span>🎨 Drawing</span>
+                <span>💃 Dance</span>
+                <span>🌱 Exploring New Things</span>
+                <span>🧠 Interesting Facts & Ideas</span>
+                <span>🎤 Communication & Public Speaking</span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+        <section id="projects">
+
+            <p class="small-text">WHAT I'VE BUILT</p>
+
+            <h2>My Projects</h2>
+
+            <div class="project-card">
+
+                <h3>Single Stage BJT Amplifier</h3>
+
+                <p>
+                    A practical electronics project involving transistor
+                    amplification, circuit design and breadboard implementation.
+                </p>
+
+            </div>
+
+
+       
+        </section>
+
+<!-- COURSES & CERTIFICATIONS SECTION -->
+
+<section id="courses">
+
+    <p class="small-text">CONTINUOUS LEARNING</p>
+
+    <h2>Courses & Certifications</h2>
+
+    <p class="section-description">
+        A record of courses, certifications and skills
+        I'm developing beyond the classroom.
+    </p>
+
+    <div class="courses-grid">
+
+       
+<div class="course-card">
+
+    <p class="course-category">DIGITAL SKILLS</p>
+
+    <h3>Digital 101 – 30 Hours</h3>
+
+    <p>FutureSkills Prime · NASSCOM</p>
+
+    <span class="course-status">
+        Gold Category · 90% Score · May 2026
+    </span>
+
+</div>
+
+
+    </div>
+
+</section>
+
+
+        <!-- ACHIEVEMENTS SECTION -->
+        <section id="achievements">
+
+            <p class="small-text">MILESTONES & EXPERIENCES</p>
+
+            <h2>Achievements</h2>
+
+            <p class="section-description">
+                A collection of meaningful milestones and experiences.
+            </p>
+
+            <div class="achievements-grid">
+
+                <button class="achievement-card" type="button"
+                    onclick="openAchievement()">
+
+                    <img src="guard-of-honour-cover.jpg"
+                         alt="Guard of Honour">
+
+                    <div class="achievement-caption">
+                        <h3>Guard of Honour</h3>
+                        <p>Vice President's Visit · RSET · 2026</p>
+                    </div>
+
+                </button>
+
+            </div>
+
+        </section>
+
+        <!-- ACHIEVEMENT POP-UP -->
+
+       <div id="achievement-modal" class="achievement-modal"
+     aria-hidden="true">
+
+            <div class="modal-content">
+
+                <button class="modal-close" type="button"
+                        onclick="closeAchievement()"
+                        aria-label="Close pop-up">
+                    &times;
+                </button>
+
+                <!-- DETAILS FIRST -->
+
+                <p class="small-text">ACHIEVEMENT / 01</p>
+
+                <h2>Guard of Honour</h2>
+
+                <p class="modal-organization">
+                    RAJAGIRI SCHOOL OF ENGINEERING & TECHNOLOGY
+                </p>
+
+                <p class="modal-date">
+                    31 AUGUST 2026
+                </p>
+
+                <div class="modal-divider"></div>
+
+                <h3>About the Achievement</h3>
+
+                <p>
+                    Selected as one of 13 NCC cadets to participate
+                    in the Guard of Honour during the Vice President's
+                    visit to Rajagiri School of Engineering & Technology.
+                </p>
+
+                <h3>My Involvement</h3>
+
+                <p>
+                    Participated as a member of the Guard of Honour
+                    representing the RSET NCC unit.
+                </p>
+
+                <div class="modal-divider"></div>
+
+              <!-- COVER IMAGE -->
+
+<div class="achievement-featured">
+    <img class="achievement-photo"
+         src="guard-of-honour-cover.jpg"
+         alt="Guard of Honour cover photograph">
+</div>
+
+<!-- EVENT GALLERY -->
+
+<h3>Event Gallery</h3>
+
+<div class="achievement-gallery">
+
+    <img class="achievement-photo"
+         src="guard-photo-1.jpg" alt="Event photograph 1">
+
+    <img class="achievement-photo"
+         src="guard-photo-2.jpg" alt="Event photograph 2">
+
+    <img class="achievement-photo"
+         src="guard-photo-3.jpg" alt="Event photograph 3">
+
+    <img class="achievement-photo"
+         src="guard-photo-4.jpg" alt="Event photograph 4">
+
+</div>
+
+            </div>
+
+        </div>
+<!-- PHOTO LIGHTBOX -->
+
+<div id="photo-lightbox" class="photo-lightbox">
+
+    <button class="lightbox-close"
+            onclick="closePhotoViewer()"
+            aria-label="Close photo viewer">
+        &times;
+    </button>
+
+    <button class="lightbox-arrow lightbox-prev"
+            onclick="changePhoto(-1)"
+            aria-label="Previous photo">
+        &#10094;
+    </button>
+
+    <img id="lightbox-image" src="" alt="Achievement photograph">
+
+    <button class="lightbox-arrow lightbox-next"
+            onclick="changePhoto(1)"
+            aria-label="Next photo">
+        &#10095;
+    </button>
+
+    <p id="lightbox-counter"></p>
+
+</div>
+
+        <section id="contact">
+
+
+    <p class="small-text">LET'S CONNECT</p>
+
+    <h2>Contact Me</h2>
+
+    <p>
+        I’m always interested in learning, collaborating and
+        exploring new opportunities.
+    </p>
+
+
+    <div class="contact-buttons">
+
+     <a href="mailto:navaminavahara@gmail.com" class="button">
+    Email Me
+</a>
+
+      <a href="https://www.linkedin.com/in/navami-s-a419b637b" class="button outline" target="_blank">
+    LinkedIn
+</a>
+
+    </div>
+
+</section>
+    </main>
+
+
+    <footer>
+        <p>© 2026 NAVAMI. All rights reserved.</p>
+    </footer>
+
+
+    <script src="script.js"></script>
+<script type="module" src="firebase.js"></script>
+</body>
+</html>
