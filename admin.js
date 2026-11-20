@@ -3,9 +3,9 @@ import { auth, db } from "./firebase.js";
 import {
     signInWithEmailAndPassword,
     onAuthStateChanged,
-    signOut
+    signOut,
+    sendPasswordResetEmail
 } from "https://www.gstatic.com/firebasejs/13.4.0/firebase-auth.js";
-
 import {
     addDoc,
     collection
@@ -24,6 +24,22 @@ onAuthStateChanged(auth, (user) => {
     } else {
         loginSection.style.display = "block";
         dashboardSection.style.display = "none";
+    }
+});
+
+document.getElementById("reset-password-button").addEventListener("click", async () => {
+    const email = document.getElementById("admin-email").value.trim();
+
+    if (!email) {
+        loginMessage.textContent = "Please enter your registered email first.";
+        return;
+    }
+
+    try {
+        await sendPasswordResetEmail(auth, email);
+        loginMessage.textContent = "Password reset email sent! Check your inbox.";
+    } catch (error) {
+        loginMessage.textContent = "Could not send reset email. Please check the email address.";
     }
 });
 
