@@ -53,6 +53,7 @@ const achievementPhotos = Array.from(
 let currentPhotoIndex = 0;
 
 function openPhotoViewer(index) {
+activeGallery = "achievement";
     currentPhotoIndex = index;
     showCurrentPhoto();
 
@@ -68,13 +69,30 @@ function showCurrentPhoto() {
         (currentPhotoIndex + 1) + " / " + achievementPhotos.length;
 }
 
-function changePhoto(direction) {
-    currentPhotoIndex =
-        (currentPhotoIndex + direction + achievementPhotos.length)
-        % achievementPhotos.length;
 
-    showCurrentPhoto();
+let activeGallery = "achievement";
+
+function changePhoto(direction) {
+
+    if (activeGallery === "certificate") {
+
+        currentCertificateIndex =
+            (currentCertificateIndex + direction + certificatePhotos.length)
+            % certificatePhotos.length;
+
+        showCertificatePhoto();
+
+    } else {
+
+        currentPhotoIndex =
+            (currentPhotoIndex + direction + achievementPhotos.length)
+            % achievementPhotos.length;
+
+        showCurrentPhoto();
+
+    }
 }
+
 
 function closePhotoViewer() {
     document.getElementById("photo-lightbox")
@@ -124,4 +142,41 @@ photoLightbox.addEventListener("touchend", function(event) {
 
     }
 }, { passive: true });
+
+
+
+// Digital 101 certificate gallery
+
+const certificatePhotos = [
+    "digital-101-certificate-1.jpg",
+    "digital-101-certificate-2.jpg"
+];
+
+let currentCertificateIndex = 0;
+
+function openCertificateViewer(index) {
+activeGallery = "certificate";
+    currentCertificateIndex = index;
+
+    document.getElementById("photo-lightbox")
+        .classList.add("active");
+
+    showCertificatePhoto();
+}
+
+function showCertificatePhoto() {
+    document.getElementById("lightbox-image").src =
+        certificatePhotos[currentCertificateIndex];
+
+    document.getElementById("lightbox-counter").textContent =
+        (currentCertificateIndex + 1) + " / " + certificatePhotos.length;
+}
+
+function changeCertificatePhoto(direction) {
+    currentCertificateIndex =
+        (currentCertificateIndex + direction + certificatePhotos.length)
+        % certificatePhotos.length;
+
+    showCertificatePhoto();
+}
 

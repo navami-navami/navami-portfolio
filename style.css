@@ -663,4 +663,41 @@ backdrop-filter: blur(4px);
 
 
 
+.certificate-photos {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.certificate-photos img {
+    width: 100%;
+    max-width: 220px;
+    height: 150px;
+    object-fit: contain;
+    border-radius: 8px;
+    background: #ffffff;
+}
+
+.certificate-btn {
+    display: inline-block;
+    margin-top: 18px;
+    padding: 10px 22px;
+    background: transparent;
+    color: #F3EFE4;
+    border: 1px solid #0B6B52;
+    border-radius: 6px;
+    font-family: inherit;
+    font-size: 13px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.certificate-btn:hover {
+    background: #0B6B52;
+    color: #ffffff;
+    box-shadow: 0 0 12px rgba(11, 107, 82, 0.4);
+}
+
+
 
